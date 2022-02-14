@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+@mixin flexContainer($direction, $justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin textStyle($color){
+    color: $color;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+@mixin tablet{
+    @media(min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media(min-width: v.$desktop){
+        @content;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- fav icon --> 
+    <link rel="icon" href = "./layout/assets/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um serviço de rastreio de encomendas totalmente gratuito, veja a situação da encomenda através do código de rastreamento, acompanhar o pedido.">
+    <meta name="keywords" content="restramento,encomendas,correios,transportadora,código rastreio,objetos">
+    <meta name="author" content="Alessandra do Couto"> 
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="..., ...">
+    <meta property="og:locale" content="pt-BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Um serviço de rastreio de encomendas totalmente gratuito!">
+    <meta property="og:description" content="Um serviço de rastreio de encomendas totalmente gratuito, veja a situação da encomenda através do código de rastreamento, acompanhar o pedido.">
+    <meta property="og:url" content="https://www.alessandracouto.com/">
+    <meta property="og:site_name" content="alessandra do Couto">
+    <meta property="og:image" content="./layout/assets/logo.png">
+    <title>Consulte sua encomenda - Rastreio - Encomendas</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <!-- meu css -->
+    <link rel="stylesheet" href="./build/css/style.css">
+</head>
+<body>
+    <div class="background">
+        <header class="header__container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li>
+                        <a class="header__menu__link" href="index.html"><img src="./layout/assets/logo.png" alt="logo consulte sua encomenda"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- pesquisa -->
+            <section class="container">
+                <h1 class="container__title">Consulte sua encomenda:</h1>
+                <form class="container__form">
+                    <label for="search"></label>
+                    <input type="text" aria-required="true" id ="search" class="search" name="search" placeholder="Digite o número do pedido">
+                    <input type=image alt="pesquisar" title="buscar" src="./layout/assets/lupa.png" class="submit">
+                </form>
+            </section>
+            <!-- resultado -->
+            <section class="content">
+                <article class="content__client">
+                    <p class="text__id"></p>
+                    <p class="text__valor"></p>
+                </article>
+                <article class="content__detail">
+                    <p class="text__result"></p>
+                    <p class="text__data"></p>
+                </article>
+            </section>
+            <!-- resultado com erro -->
+            <section class="content__error">
+                <p class="text__error__detail"></p>
+                <p class="text__error__search"></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

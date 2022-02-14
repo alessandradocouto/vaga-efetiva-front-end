@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: v.$font_primaria;
+    background-color: v.$white;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:focus, input:focus{
+    outline: 2px solid v.$blue_light;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+

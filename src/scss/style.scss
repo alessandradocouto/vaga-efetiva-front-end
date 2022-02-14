@@ -1,0 +1,143 @@
+@use './base/' as *;
+
+body{
+    .background{
+        margin: $space;
+        @include desktop{
+            &{
+                max-width: 1170px;
+            }
+        }
+    }
+
+    .header__container{
+        @include flexContainer(column, center);
+    }
+}
+
+nav{
+    @include tablet{
+        &{
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+}
+
+.container{
+    max-width: 100%;
+    margin: 3.25em auto 1.3em auto;
+
+    @include flexContainer(column, center);
+
+    &__title{
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 700;
+        font-style: italic;
+        color: $primaria;
+    }
+
+    &__form{
+        display: flex;
+        position: relative;
+        margin: 1em;
+    }
+
+    .search{
+        border: 3px solid $green;
+        border-radius: 25px 25px;
+        text-align: left;
+        font-size: 1em;
+        max-width: 100%;
+        position: relative;
+        bottom: 0;
+        padding: 0.5em 2.3em;
+    }
+
+    .search::placeholder{
+        font-style: italic;
+        color: $gray;
+    }
+
+    .submit{
+        border: none;
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        bottom: 6px;
+        right: 11px;
+        cursor: pointer;
+    }
+
+    @include desktop{
+        .search{
+            padding: 0.5em auto 2.875em;
+            text-align: left; 
+        }
+    
+        .submit{
+            width: 28px;
+            height: 28px;
+            bottom: 5px;
+            right: 13px;
+        }
+    }
+}
+
+.content{
+    
+    &, &__error{
+        text-align: center;
+    }
+
+    .text__valor{
+        display: none;
+    }
+
+    .text__valor, .text__id, .text__result, .text__data{
+        @include textStyle($secundaria);
+        animation: fadeIn linear 0.5s;
+    }
+
+    &, &__error{
+       padding-top: 0.2em;
+    }
+
+
+    @include tablet{
+
+        &__client, &__detail{
+            @include flexContainer(row, space-evenly);
+        }
+
+        &__error{
+            @include flexContainer(column, space-evenly);
+        }
+
+        .text__result{
+            order: 2;
+        }
+    
+        .text__data{
+            order: 1;
+        }
+    
+        .text__valor{
+            display: inline-block;
+        }   
+    }
+}
+
+.content__error{
+
+    .text__error__detail, .text__error__search{
+        @include textStyle($red);
+        animation: fadeIn linear 0.5s;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

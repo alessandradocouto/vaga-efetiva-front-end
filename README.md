@@ -58,3 +58,4 @@ Abra o terminal e acesse a pasta do projeto clonado e digite:
 npm run build
 
 ```
+# vaga-efetiva-front-end

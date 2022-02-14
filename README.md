@@ -31,7 +31,7 @@
 
 - clone este repositório:
 
-` git clone https://github.com/alessandradocouto/teste-tecnico-front-end `
+` git clone https://github.com/alessandradocouto/vaga-efetiva-front-end `
 
 
 - com node js e gulp já instalados, instale o npm:
@@ -58,4 +58,3 @@ Abra o terminal e acesse a pasta do projeto clonado e digite:
 npm run build
 
 ```
-# vaga-efetiva-front-end

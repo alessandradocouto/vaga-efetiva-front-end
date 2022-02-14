@@ -38,7 +38,7 @@
 
 ` npm install `
 
-[Projeto rodando online](https://alessandradocouto.github.io/teste-tecnico-front-end/)
+[Projeto rodando online](https://alessandradocouto.github.io/vaga-efetiva-front-end/)
 
 ## Desenvolvimento
 
